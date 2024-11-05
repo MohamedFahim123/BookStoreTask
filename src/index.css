@@ -1,0 +1,150 @@
+body {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+  color: #09093799;
+  font-family: "Manrope", sans-serif;
+}
+.css-y9hqpe-MuiTypography-root,
+.css-rizt0-MuiTypography-root,
+.css-er619e-MuiFormHelperText-root,
+.css-1rju2q6-MuiButtonBase-root-MuiMenuItem-root,
+.css-c4f7hb-MuiButtonBase-root-MuiButton-root,
+.css-1u93f9h-MuiButtonBase-root-MuiButton-root,
+.css-stnzmu-MuiTypography-root,
+.css-1st0wfs-MuiTypography-root,
+.css-113d811-MuiFormLabel-root-MuiInputLabel-root,
+.css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Manrope", sans-serif !important;
+}
+.css-dtmyxk-MuiTypography-root,
+.css-1363n2g-MuiTypography-root,
+.css-bdcj6b-MuiButtonBase-root-MuiButton-root,
+.css-rco8a3-MuiTypography-root,
+.css-lkd44j-MuiTypography-root,
+.css-1iopsfg-MuiButtonBase-root-MuiButton-root,
+.css-16u169w-MuiButtonBase-root-MuiButton-root,
+.css-1sndt7s-MuiTypography-root,
+.css-nqi7hy-MuiTypography-root,
+.css-59ti3n-MuiTypography-root,
+.css-ko6v9v-MuiTypography-root,
+.css-1rsjc19-MuiTypography-root,
+.css-1cvam6m-MuiTypography-root,
+.css-8ay4fz-MuiTypography-root,
+.css-1wap0lx-MuiTypography-root,
+.css-t9eg3q-MuiButtonBase-root-MuiButton-root,
+.css-1xk53cf-MuiTypography-root,
+.css-1euopwx-MuiTypography-root,
+.css-1qx8smn-MuiTypography-root,
+.css-bi2pdn-MuiTypography-root,
+.css-1lqz5te-MuiTypography-root,
+.css-5hp5p6-MuiTypography-root,
+.css-ajd973-MuiTypography-root,
+.css-pb0e2u-MuiTypography-root,
+.css-195k8d3-MuiTypography-root,
+.css-1b4lb75-MuiTypography-root,
+.css-1lfh99e-MuiButtonBase-root-MuiButton-root,
+.css-gcjm4l-MuiTypography-root {
+  font-family: "Inter", sans-serif !important;
+}
+
+.css-bdcj6b-MuiButtonBase-root-MuiButton-root {
+  color: #000000 !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  color: #090937;
+}
+
+img {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.css-1ro0yzq-MuiContainer-root {
+  padding: 0 !important;
+}
+.css-yg49xf-MuiToolbar-root {
+  padding: 0 !important;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  display: none;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 18px !important;
+}
+.swiper-button-category-prev:after,
+.swiper-button-category-next:after {
+  font-size: 16px !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  gap: 12px;
+  left: 200px !important;
+  bottom: 50px !important;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #969696;
+  margin: 0 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ed553b;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ed553b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-pagination-lock {
+  display: block;
+}
+
+.swiper-pagination-allBooks {
+    justify-content: center;
+    left: 0 !important;
+    bottom: 30px !important;
+}
+.swiperPaginationFeaturedBook {
+  left: 50% !important;
+  right: 50% !important;
+  width: fit-content !important;
+  transform: translate(-50%);
+}

@@ -1,0 +1,21 @@
+.authView__container {
+    height: 100vh;
+    overflow: hidden;
+}
+.authImage__container {
+    position: relative;
+}
+.authImage {
+    height: 100vh;
+    object-fit: cover;
+}
+.authImage__container::after {
+    content: '';
+    position: absolute;
+    background-color: #1D1D4E66;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
