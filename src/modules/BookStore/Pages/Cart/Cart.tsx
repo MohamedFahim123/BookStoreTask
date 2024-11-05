@@ -20,7 +20,7 @@ export default function Cart() {
     ];
 
     useEffect(()=>{
-        setTimeout(()=> setLoading(true),500);
+        setTimeout(()=> setLoading(false),500);
     },[]);
     
     if(loading){
