@@ -14,7 +14,7 @@ export default function ConfirmOrder() {
     }, []);
 
     if (loading) {
-        return <Loader />
+        return <Loader />;
     };
 
     return (

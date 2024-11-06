@@ -8,12 +8,10 @@ import CartTable from '../CartTable/CartTable';
 import CartTableHead from '../CartTableHead/CartTableHead';
 import CartPricesData from '../CartPricesData/CartPricesData';
 import Cookies from 'js-cookie';
-import Loader from '../../../Shared/Loader/Loader';
-import NotFound from '../../../Shared/NotFound/NotFound';
 
 export default function CartSection() {
     const dispatch = useDispatch<AppDispatch>();
-    const { cartData , loading ,error } = useSelector((state: RootState) => state.cart);
+    const { cartData } = useSelector((state: RootState) => state.cart);
     const token = Cookies.get('authBookToken');
 
     useEffect(() => {
@@ -21,9 +19,6 @@ export default function CartSection() {
             dispatch(fetchCartItems(token));
         };
     }, [dispatch, token]);
-
-    if (loading) return <Loader />;
-    if (error) return <NotFound />;
 
     return (
         <Box width={'90%'} margin={'auto'}>

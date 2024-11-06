@@ -11,7 +11,7 @@ import { fetchCategories } from "../../../Store/Slices/CategorySlice";
 import NotFound from "../../../Shared/NotFound/NotFound";
 
 export default function Home() {
-    const { loading: categoryLoading,error : catError } = useSelector((state: RootState) => state.categories);
+    const { loading: categoryLoading, error: catError } = useSelector((state: RootState) => state.categories);
     const { loading: bookLoading, error: bookError } = useSelector((state: RootState) => state.books);
     const [loading, setLoading] = useState(true);
     const dispatch = useDispatch<AppDispatch>();

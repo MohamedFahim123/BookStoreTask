@@ -25,7 +25,7 @@ export default function CartPricesData({ total, currPage }: CartPricesProps) {
             </Box>
             {
                 currPage === 'cart' &&
-                <Button onClick={() => navigate('/book-store/check-out')} variant="contained" color="primary" fullWidth sx={{ marginTop: 3, backgroundColor: '#ED553B', color: '#fff' }}>
+                <Button disabled={total === 0} onClick={() => navigate('/book-store/check-out')} variant="contained" color="primary" fullWidth sx={{ marginTop: 3, backgroundColor: '#ED553B', color: '#fff' }}>
                     Proceed
                 </Button>
             }
