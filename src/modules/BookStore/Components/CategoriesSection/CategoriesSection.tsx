@@ -14,7 +14,6 @@ export default function CategoriesSection() {
     const { categories } = useSelector((state: RootState) => state.categories);
     const imgs: string[] = [catImg1, catImg2, catImg3];
 
-
     return (
         <Box sx={{ position: 'relative', backgroundColor: '#FFFFFF', width: '90%', margin: 'auto', padding: '50px 0' }}>
             <CategoriesHeading />

@@ -13,11 +13,12 @@ export default function MainPageBtn({ name, path }: mainBtnProps) {
             onClick={() => navigate(path)}
             variant="outlined"
             sx={{
+                display: 'block',
                 borderColor: '#393280',
                 color: '#393280',
                 textTransform: 'upper-case',
                 borderRadius: '7px',
-                padding: '10px 25px',
+                padding: { lg: '10px 25px',md: '8px 20px' , xs: '5px 15px'},
                 transition: 'all 0.3s ease-in-out',
                 ":hover":{
                     color: '#ffffff',

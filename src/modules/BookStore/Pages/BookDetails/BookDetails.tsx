@@ -42,7 +42,6 @@ export default function BookDetails() {
     if(error){
         return <NotFound />
     };
-    console.log(book)
 
     return (
         <>

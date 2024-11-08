@@ -25,8 +25,18 @@ export default function CategoriesSectionSlider({ categories, imgs }: categories
             loop={true}
             lazyPreloadPrevNext={1}
             spaceBetween={30}
-            slidesPerView={3}
             style={{ cursor: 'grab', marginTop: '50px' }}
+            breakpoints={{
+                600: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+            }}
         >
             {
                 categories?.map((category, idx) => (

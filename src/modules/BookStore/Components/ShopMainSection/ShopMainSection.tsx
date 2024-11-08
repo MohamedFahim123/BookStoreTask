@@ -131,7 +131,7 @@ export default function ShopMainSection() {
                             </Select>
                         </FormControl>
                     </Grid>
-                    <Grid size={{ xs: 3, md: 3 }}>Showing {filterations.limit} of {totalPages * +filterations.limit} results</Grid>
+                    <Grid size={{ xs: 0, md: 3 }}>Showing {filterations.limit} of {totalPages * +filterations.limit} results</Grid>
                     <Grid size={{ xs: 3, md: 3 }} display={'flex'} justifyContent={'space-between'} alignItems={'center'} container spacing={1}>
                         <Typography variant="h6" sx={{ color: '#393280', fontSize: '14px' }}>
                             Show :

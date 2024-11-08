@@ -29,6 +29,23 @@ export default function BooksSlider({ books }: BookSlideProps) {
             spaceBetween={30}
             slidesPerView={5}
             style={{ padding: '0 10px 40px' }}
+            breakpoints={{
+                300: {
+                    slidesPerView: 1,
+                },
+                600: {
+                    slidesPerView: 1.5,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            }}
         >
             {
                 books?.map((book, idx) => (

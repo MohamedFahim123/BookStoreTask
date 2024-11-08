@@ -102,7 +102,12 @@ a {
   left: 200px !important;
   bottom: 50px !important;
 }
-
+@media (max-width: 1024px) {
+  .swiper-pagination {
+    left: 50% !important;
+    bottom: 25px !important
+  }
+}
 .swiper-pagination-bullet {
   display: block;
   width: 10px;
